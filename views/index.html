@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CMPT A3/4 - A Group Portrait</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+</head>
+<body onload="refreshArea()">
+<section class="heading-title">
+    <h1>Group Portrait</h1>
+    <h4>Inspired by Reddit's 2017 Place Project</h4>
+    <section class="control-panel">
+        <input id="id-input" type="text" placeholder="identifier">
+        <input id="colour-input" type="text" placeholder="colour">
+        <input id="height-input" type="number" placeholder="height">
+        <input id="width-input" type="number" placeholder="width">
+        <section class="buttons">
+            <button type="button" onclick="submitRectangle()">Create</button>
+            <button type="button" onclick="updateRectangle()">Update</button>
+            <button type="button" onclick="deleteRectangle()">Delete</button>
+        </section>
+    </section>
+</section>
+<section>
+    <svg class="drawing-area" id="drawing-board">
+    </svg>
+</section>
+<section class="user-info">
+    <div id="coord-info">
+        <p id="coords-placeholder">Coordinates (x,y)</p>
+        <p id="coords">(x,y)</p>
+    </div>
+    <div id="id-info">
+        <p id="id-placeholder">Identifier</p>
+        <p id="identifier-hover"> </p>
+    </div>
+</section>
+<section class="footer-info">
+    <br><br><br><br><br><br>
+    <p><b>Create:</b> select anywhere within the primary box and fill all the requested fields</p>
+    <p><b>Update:</b> select a rectangle to obtain the identifier and then enter only the changes to be made</p>
+    <p><b>Delete:</b> select a rectangle then delete</p>
+    <p> More Info about Reddit's Place Project:
+        <a href="https://en.wikipedia.org/wiki/Place_(Reddit)">Wiki</a> //
+        <a href="https://external-preview.redd.it/jHMQH6ZKdHEZyhU8EJRtE6CTJljmTnFQkfxCgtuVmiQ.png?auto=webp&s=453be789c7c34b06a7149bf5ecd937734de8a028">Final Place image from Reddit</a>
+    </p>
+</section>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

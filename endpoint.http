@@ -1,0 +1,43 @@
+POST http://localhost:3000/find
+Content-Type: application/json
+
+{
+  "identifier": "myRect"
+}
+
+###
+POST http://localhost:3000/create
+Content-Type: application/json
+
+{
+  "width": 10.3,
+  "height": 12.3,
+  "colour": "red",
+  "identifier": "myRect",
+  "x": 20,
+  "y": 20
+}
+
+###
+GET http://localhost:3000/read
+Accept: application/json
+
+###
+
+PUT http://localhost:3000/update
+Content-Type: application/json
+
+{
+  "identifier": "myRect",
+  "colour": "blue",
+  "width": 12
+}
+
+###
+
+DELETE http://localhost:3000/delete
+Content-Type: application/json
+
+{
+  "idntifier": "myRect"
+}

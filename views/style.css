@@ -1,0 +1,50 @@
+
+.heading-title {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.user-info {
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-info {
+    font-size: 12px;
+    padding-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+}
+
+#coord-info {
+    text-align: left;
+    float: left;
+}
+
+#id-info {
+    text-align: right;
+    float: right;
+}
+
+.control-panel {
+    display: inline-grid;
+}
+
+.buttons {
+    display: inline-block;
+}
+
+
+.drawing-area {
+    display: block;
+    padding: 0;
+    margin: 10px auto auto auto;
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+
+}
