@@ -1,6 +1,6 @@
 
 
-# Assignment 3/4
+# Drawing with Rectangles
 ## Server
 
 ### Payload structure
